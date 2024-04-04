@@ -1,0 +1,132 @@
+/* UNIVERSAL */
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+}
+/* LAPTOP */
+/* MAIN */
+.main-container {
+    width:100%;
+    min-height:650px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-grow:0;
+}
+
+/* SECTION */
+section{
+     width:270px;
+     min-height: 400px;
+     background-color: white;
+     padding:25px;
+     text-align:center;
+}
+
+section img {
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin-top:20px;
+}
+section h1,p {
+    margin-top:15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section .icon {
+    display:flex;
+    justify-content: center;
+    gap:15px;   
+    margin-top:30px;
+}
+
+/* MOBILE */
+@media only screen and (min-width:300px) and (max-width:500px) {
+  .main-container {
+    flex-direction: column;
+    gap:20px;
+  }
+}
+
+/* TAB */
+@media only screen and (min-width:500px) and (max-width:800px) {
+    .main-container {
+      flex-direction:column;
+      gap:20px;
+    }
+    section{
+        width:600px;
+        padding-top:20px;
+        padding-bottom: 20px;
+   }
+   section img {
+       width:180px;
+       height:180px;
+       margin-top:10px;
+   }
+   section h1,p {
+       font-size:25px;
+   }
+   section .icon {
+       font-size:20px;
+       gap:20px;   
+   }
+  }
+
+  /* LAPTOP */
+@media only screen and (min-width:800px) and (max-width:1200px) {
+    .main-container {
+      gap:15px;
+      padding:0px 20px 0px 20px;
+    }
+    section{
+        width:500px;
+        padding-top:15px;
+        padding-bottom: 20px;
+   }
+   section img {
+       width:160px;
+       height:160px;
+       margin-top:10px;
+   }
+   section h1,p {
+       font-size:25px;
+   }
+   section .icon {
+       font-size:20px;
+       gap:20px;   
+   }
+  }
+
+    
+/* DESKTOP */
+@media only screen and (min-width:1450px) and (max-width:4000px) {
+    .main-container {
+        gap:20px;
+    }
+    section{
+        width:500px;
+        height:550px;
+        padding-top:20px;
+        padding-bottom:15px;
+   }
+   section img {
+       width:250px;
+       height:250px;
+       margin-top:10px;
+   }
+   section h1,p {
+       font-size:30px;
+   }
+   section .icon {
+       font-size:25px;
+       gap:25px;   
+       margin-top:30;
+   }
+  } 
